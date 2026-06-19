@@ -5,7 +5,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * Sistema Super Trunfo usando JDBC puro como exemplo pratico
+ * Sistema Super Trunfo usando JDBC puro como exemplo pratico novo
  * Nível 1 - Novato: Desafio de Código - "Cartas Clássicas - JDBC Puro"
  * 
  * Funcionalidades:
@@ -25,7 +25,7 @@ public class SuperTrunfoJDBC {
     private static Random random = new Random();
     
     /**
-     * Obtém uma conexão com o banco de dados Derby (database)
+     * Obtém uma conexão com o banco de dados Derby (database new)
      */
     private static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL, USUARIO, SENHA);
@@ -124,7 +124,7 @@ public class SuperTrunfoJDBC {
     }
     
     /**
-     * Busca um aluno específico por matrícula
+     * Busca um aluno (student) específico por matrícula
      */
     public static Aluno buscarAluno(String matricula) {
         String sql = "SELECT * FROM aluno WHERE matricula = ?";
@@ -148,7 +148,7 @@ public class SuperTrunfoJDBC {
     }
     
     /**
-     * Exibe todas as cartas formatadas
+     * Exibe todas as cartas (Cards) formatadas
      */
     public static void exibirTodasCartas() {
         List<Aluno> alunos = consultarTodosAlunos();
@@ -168,7 +168,7 @@ public class SuperTrunfoJDBC {
     }
     
     /**
-     * Insere dados de exemplo no sistema
+     * Insere (input) dados de exemplo no sistema
      */
     public static void inserirDadosExemplo() {
         System.out.println("\n🎲 Inserindo cartas de exemplo...");
@@ -189,7 +189,7 @@ public class SuperTrunfoJDBC {
     }
     
     /**
-     * Implementa a lógica de batalha entre duas cartas
+     * Implementa a lógica de batalha entre (between) duas cartas
      */
     public static void batalharCartas() {
         List<Aluno> alunos = consultarTodosAlunos();
@@ -228,7 +228,7 @@ public class SuperTrunfoJDBC {
     }
     
     /**
-     * Processa a opção escolhida pelo usuário
+     * Processa a opção (option) escolhida pelo usuário
      */
     public static void processarOpcao(int opcao) {
         switch (opcao) {
@@ -282,7 +282,7 @@ public class SuperTrunfoJDBC {
     }
     
     /**
-     * Método principal que executa o programa
+     * Método principal que executa o programa (program)
      */
     public static void main(String[] args) {
         System.out.println("🃏 ===================================");
