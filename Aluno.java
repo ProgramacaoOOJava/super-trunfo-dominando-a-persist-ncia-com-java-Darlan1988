@@ -8,9 +8,9 @@
  * - Raridade: determinada pela primeira letra da matrícula (A-M = Comum, N-Z = Rara)
  */
 public class Aluno {
-    private String matricula;
-    private String nome;
-    private int entrada;
+    private String matricula = matricula;
+    private String nome = nome;
+    private int entrada = entrada;
     
     // Construtor padrão
     public Aluno() {

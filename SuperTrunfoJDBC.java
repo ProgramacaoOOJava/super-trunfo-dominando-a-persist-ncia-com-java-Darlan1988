@@ -5,7 +5,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * Sistema Super Trunfo usando JDBC puro
+ * Sistema Super Trunfo usando JDBC puro como exemplo pratico
  * Nível 1 - Novato: Desafio de Código - "Cartas Clássicas - JDBC Puro"
  * 
  * Funcionalidades:
@@ -25,14 +25,14 @@ public class SuperTrunfoJDBC {
     private static Random random = new Random();
     
     /**
-     * Obtém uma conexão com o banco de dados Derby
+     * Obtém uma conexão com o banco de dados Derby (database)
      */
     private static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL, USUARIO, SENHA);
     }
     
     /**
-     * Cria a tabela aluno se ela não existir
+     * Cria a tabela (table) aluno se ela não existir
      */
     public static void criarTabela() {
         String sql = .
@@ -49,7 +49,7 @@ public class SuperTrunfoJDBC {
     }
     
     /**
-     * Insere um aluno (carta) na base de dados usando PreparedStatement
+     * Insere um aluno (carta/card) na base de dados usando PreparedStatement
      */
     public static boolean inserirAluno(Aluno aluno) {
         String sql = "INSERT INTO aluno (matricula, nome, entrada) VALUES (?, ?, ?)";
